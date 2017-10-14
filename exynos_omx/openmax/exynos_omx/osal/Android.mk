@@ -30,7 +30,7 @@ LOCAL_CFLAGS += -DS3D_SUPPORT
 endif
 
 LOCAL_SHARED_LIBRARIES := libhardware
-LOCAL_STATIC_LIBRARIES := liblog libcutils
+LOCAL_STATIC_LIBRARIES := liblog libcutils libarect
 
 LOCAL_C_INCLUDES := $(EXYNOS_OMX_INC)/khronos \
 	$(EXYNOS_OMX_INC)/exynos \
