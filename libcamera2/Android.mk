@@ -21,7 +21,9 @@ LOCAL_SRC_FILES:= \
 	ExynosJpegEncoderForCamera.cpp
 
 
-LOCAL_SHARED_LIBRARIES:= libutils libcutils libbinder liblog libcamera_client libhardware
+LOCAL_SHARED_LIBRARIES:= libutils libcutils libbinder liblog libcamera_client libhardware libgui
+
+LOCAL_STATIC_LIBRARIES := libarect
 
 LOCAL_CFLAGS += -DGAIA_FW_BETA
 
