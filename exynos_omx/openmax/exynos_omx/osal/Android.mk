@@ -31,6 +31,7 @@ endif
 
 LOCAL_SHARED_LIBRARIES := libhardware libnativewindow
 LOCAL_STATIC_LIBRARIES := liblog libcutils libarect
+LOCAL_HEADER_LIBRARIES := libnativebase_headers
 
 LOCAL_C_INCLUDES := $(EXYNOS_OMX_INC)/khronos \
 	$(EXYNOS_OMX_INC)/exynos \
