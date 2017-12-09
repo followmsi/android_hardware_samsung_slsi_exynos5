@@ -29,7 +29,7 @@ ifeq ($(BOARD_USE_S3D_SUPPORT), true)
 LOCAL_CFLAGS += -DS3D_SUPPORT
 endif
 
-LOCAL_SHARED_LIBRARIES := libhardware
+LOCAL_SHARED_LIBRARIES := libhardware libnativewindow
 LOCAL_STATIC_LIBRARIES := liblog libcutils libarect
 
 LOCAL_C_INCLUDES := $(EXYNOS_OMX_INC)/khronos \
