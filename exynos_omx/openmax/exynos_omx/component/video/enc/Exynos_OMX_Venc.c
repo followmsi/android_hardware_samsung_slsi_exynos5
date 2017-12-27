@@ -41,7 +41,7 @@
 #include "csc.h"
 
 #ifdef USE_STOREMETADATA
-#include <system/window.h>
+#include <vndk/window.h>
 #include "Exynos_OSAL_Android.h"
 #endif
 
