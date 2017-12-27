@@ -43,6 +43,9 @@ LOCAL_C_INCLUDES := $(EXYNOS_OMX_INC)/khronos \
 	hardware/samsung_slsi/exynos5/include \
 	frameworks/native/include/media/hardware \
 	frameworks/native/include/media/openmax \
-	hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/video/exynos5/mfc_v4l2/include
+	hardware/samsung_slsi/exynos5/exynos_omx/codecs/exynos_codecs/video/exynos5/mfc_v4l2/include \
+	frameworks/native/libs/arect/include \
+	frameworks/native/libs/nativebase/include \
+	frameworks/native/libs/nativewindow/include
 
 include $(BUILD_STATIC_LIBRARY)
