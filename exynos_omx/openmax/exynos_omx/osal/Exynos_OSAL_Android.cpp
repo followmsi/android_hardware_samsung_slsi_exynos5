@@ -153,6 +153,12 @@ OMX_ERRORTYPE Exynos_OSAL_UnlockANBHandle(OMX_IN OMX_U32 handle)
         goto EXIT;
     }
 
+    if (mapper.freeBuffer(bufferHandle) != 0) {
+        Exynos_OSAL_Log(EXYNOS_LOG_ERROR, "%s: mapper.freeBuffer() fail", __func__);
+        ret = OMX_ErrorUndefined;
+        goto EXIT;
+    }
+
     Exynos_OSAL_Log(EXYNOS_LOG_TRACE, "%s: buffer unlocked: 0x%x", __func__, handle);
 
 EXIT:
