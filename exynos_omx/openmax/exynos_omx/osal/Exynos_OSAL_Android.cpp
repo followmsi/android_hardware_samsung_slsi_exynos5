@@ -100,6 +100,17 @@ OMX_ERRORTYPE Exynos_OSAL_LockANBHandle(
         break;
     }
 
+    /*
+     * because the imported buffer-handle gets cloned, we can safely
+     * overwrite the original buffer-handle to prevent editing the whole
+     * goddamn source and pass a secondary buffer-handle
+     */
+    if (mapper.importBuffer(bufferHandle, &bufferHandle) != 0) {
+        Exynos_OSAL_Log(EXYNOS_LOG_ERROR, "%s: mapper.importBuffer() failed", __func__);
+        ret = OMX_ErrorUndefined;
+        goto EXIT;
+    }
+
     if (mapper.lock(bufferHandle, usage, bounds, vaddr) != 0) {
         Exynos_OSAL_Log(EXYNOS_LOG_ERROR, "%s: mapper.lock() fail", __func__);
         ret = OMX_ErrorUndefined;
