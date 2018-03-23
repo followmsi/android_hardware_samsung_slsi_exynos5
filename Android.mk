@@ -29,6 +29,7 @@ exynos5_dirs := \
 	libswconverter \
 	libv4l2 \
 	libhwjpeg \
+	libcamera \
 	libhwc \
 	libcamera2 \
 	mobicore \
