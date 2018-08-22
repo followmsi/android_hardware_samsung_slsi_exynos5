@@ -16,6 +16,8 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_CFLAGS += -Wno-error
+
 LOCAL_SRC_FILES := \
 	exynos_v4l2.c \
 	exynos_subdev.c \
@@ -28,7 +30,7 @@ LOCAL_C_INCLUDES := \
 LOCAL_SHARED_LIBRARIES := \
 	liblog \
 	libutils \
-	libexynosutils 
+	libexynosutils
 
 LOCAL_MODULE := libexynosv4l2
 LOCAL_MODULE_TAGS := eng

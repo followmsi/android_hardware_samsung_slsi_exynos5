@@ -18,6 +18,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_CLANG_CFLAGS += -Wno-int-conversion
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils libexynosutils libexynosv4l2
 

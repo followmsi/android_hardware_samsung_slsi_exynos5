@@ -67,7 +67,7 @@ int exynos_subdev_open(const char *filename, int oflag, ...)
     return fd;
 }
 
-int exynos_subdev_open_devname(const char *devname, int oflag, ...)
+int exynos_subdev_open_devname(const char *devname, int oflag __unused, ...)
 {
     bool found = false;
     int fd = -1;

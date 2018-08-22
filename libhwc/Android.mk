@@ -21,6 +21,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw
 LOCAL_SHARED_LIBRARIES := liblog libcutils libEGL libGLESv1_CM libhardware \
     libhardware_legacy libion_exynos libutils libsync libexynosgscaler libexynosv4l2 libMcClient
 LOCAL_CFLAGS += -DLOG_TAG=\"hwcomposer\"
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/../include \
