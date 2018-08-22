@@ -48,7 +48,7 @@ int mali_memtrack_get_memory(pid_t pid, int type __unused,
                              size_t *num_records)
 {
     size_t allocated_records = min(*num_records, ARRAY_SIZE(record_templates));
-    int i;
+    int i __unused;
     FILE *fp;
     char line[1024];
 
