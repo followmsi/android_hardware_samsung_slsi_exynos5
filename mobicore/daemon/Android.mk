@@ -43,6 +43,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := mcDriverDaemon
 LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS += -Wno-error
 LOCAL_CFLAGS += -include buildTag.h
 LOCAL_CFLAGS += -DLOG_TAG=\"McDaemon\"
 LOCAL_C_INCLUDES += $(GLOBAL_INCLUDES)
