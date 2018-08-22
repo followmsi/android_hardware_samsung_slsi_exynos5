@@ -13,6 +13,8 @@ ifdef $(PLATFORM)
   include $(LOCAL_PATH)/Kernel/Platforms/$(PLATFORM)/Android.mk
 endif
 
+LOCAL_CFLAGS += -Wno-error
+
 # Add new source files here
 LOCAL_SRC_FILES += Kernel/CKMod.cpp
 

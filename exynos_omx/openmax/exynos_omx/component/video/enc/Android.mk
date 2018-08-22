@@ -31,6 +31,8 @@ ifeq ($(BOARD_USE_STOREMETADATA), true)
 LOCAL_CFLAGS += -DUSE_STOREMETADATA
 endif
 
+LOCAL_CFLAGS += -Wno-error
+
 LOCAL_SHARED_LIBRARIES := libcsc libnativewindow
 
 include $(BUILD_STATIC_LIBRARY)

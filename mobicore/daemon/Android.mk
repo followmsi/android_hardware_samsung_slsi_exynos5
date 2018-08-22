@@ -14,6 +14,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES += $(GLOBAL_INCLUDES)
 LOCAL_SHARED_LIBRARIES += $(GLOBAL_LIBRARIES)
 
+LOCAL_CFLAGS += -Wno-error
 LOCAL_CFLAGS := -fvisibility=hidden -fvisibility-inlines-hidden
 LOCAL_CFLAGS += -DLOG_TAG=\"McClient\"
 

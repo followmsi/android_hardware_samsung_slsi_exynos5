@@ -10,6 +10,7 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE := libExynosOMX_Core
 
 LOCAL_CFLAGS :=
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_ARM_MODE := arm
 

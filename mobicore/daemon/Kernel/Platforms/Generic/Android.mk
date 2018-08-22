@@ -8,6 +8,8 @@
 # All paths are relative to APP_PROJECT_PATH!
 KERNEL_PATH := Kernel/Platforms/Generic
 
+LOCAL_CFLAGS += -Wno-error
+
 # Add new source files here
 LOCAL_SRC_FILES += $(KERNEL_PATH)/CMcKMod.cpp
 

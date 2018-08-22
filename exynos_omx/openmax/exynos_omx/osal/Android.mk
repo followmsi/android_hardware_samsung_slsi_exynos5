@@ -19,6 +19,7 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE := libExynosOMX_OSAL
 
 LOCAL_CFLAGS :=
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_CLANG_CFLAGS += \
 	-Wno-implicit-function-declaration \

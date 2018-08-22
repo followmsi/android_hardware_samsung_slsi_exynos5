@@ -26,6 +26,8 @@ ifeq ($(BOARD_USE_S3D_SUPPORT), true)
 LOCAL_CFLAGS += -DS3D_SUPPORT
 endif
 
+LOCAL_CFLAGS += -Wno-error
+
 LOCAL_ARM_MODE := arm
 
 LOCAL_STATIC_LIBRARIES := libExynosOMX_Vdec libExynosOMX_OSAL libExynosOMX_Basecomponent \
