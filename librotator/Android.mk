@@ -25,7 +25,7 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_SRC_FILES := exynos_rotator.c
 
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libexynosrotator
 include $(BUILD_SHARED_LIBRARY)
 
