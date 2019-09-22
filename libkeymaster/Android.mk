@@ -25,6 +25,8 @@ LOCAL_SRC_FILES := keymaster_mobicore.cpp tlcTeeKeymaster_if.c
 LOCAL_C_INCLUDES := \
 	$(MOBICORE_PATH)/daemon/ClientLib/public \
 	$(MOBICORE_PATH)/common/MobiCore/inc/
+LOCAL_C_INCLUDES += \
+	$(LOCAL_PATH)/include/
 LOCAL_CFLAGS += -fvisibility=hidden -Wall -Wno-error
 LOCAL_SHARED_LIBRARIES := libcrypto liblog libMcClient libnativehelper
 LOCAL_MODULE_TAGS := optional
